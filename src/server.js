@@ -11,9 +11,12 @@ const startServer = async () => {
   const server = new ApolloServer({ schema });
   server.applyMiddleware({ app });
 
-  await mongoose.connect(`mongodb+srv://dbUser:${process.env.NODE_MONGO_PASS}@cluster0.k6xtt.mongodb.net/graphql-app?retryWrites=true&w=majority`, {
+  await mongoose.connect(
+    `mongodb+srv://${process.env.NODE_MONGO_USER}:${process.env.NODE_MONGO_PASS}@cluster0.k6xtt.mongodb.net/graphql-app?retryWrites=true&w=majority`,
+    {
     useNewUrlParser: true,
-  });
+    }
+  );
 
   app.listen(port, () => {
     console.log("listening port: %s", port);

@@ -9,4 +9,5 @@ Create a `.env` on the root of the project with the MongoDB Password:
 
 ```
 NODE_MONGO_PASS=abcdefgh1234567
+NODE_MONGO_USER=dbUser
 ```
