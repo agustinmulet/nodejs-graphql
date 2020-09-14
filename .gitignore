@@ -1,0 +1,8 @@
+#Carpetas con dependencias
+node_modules
+
+#Variables de entorno
+.env
+
+#Carpeta con configuraciones de VSCode
+.vscode/
