@@ -5,9 +5,8 @@ Created for the talk `GraphQL 101: From backend to frontend` for Cognizant Softv
 
 ## Usage
 
-Create a `.env` on the root of the project with the MongoDB Password:
+Create a `.env` on the root of the project with the MongoDB Connection String:
 
 ```
-NODE_MONGO_PASS=abcdefgh1234567
-NODE_MONGO_USER=dbUser
+NODE_MONGO_CONNECT="mongodb+srv://......"
 ```

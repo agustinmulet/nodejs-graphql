@@ -12,7 +12,7 @@ const startServer = async () => {
   server.applyMiddleware({ app });
 
   await mongoose.connect(
-    `mongodb+srv://${process.env.NODE_MONGO_USER}:${process.env.NODE_MONGO_PASS}@cluster0.k6xtt.mongodb.net/graphql-app?retryWrites=true&w=majority`,
+    process.env.NODE_MONGO_CONNECT,
     {
     useNewUrlParser: true,
     }
